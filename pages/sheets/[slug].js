@@ -7,7 +7,7 @@ import { Sheet } from '../../components/spreadsheet/sheet/Sheet';
 import { generateEmptySheetData } from '../../utils';
 import { save } from '../../utils/services';
 import html2canvas from 'html2canvas';
-import jsPDF from 'jsPDF';
+import { jsPDF } from "jspdf";
 function WrappedHome({ data, supportedTools }) {
     const router = useRouter()
     const [sheets, setSheets] = useState(data.content);
