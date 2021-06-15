@@ -123,7 +123,7 @@ export default function Post(post) {
                             <ThumbUpIcon />
                             <div style={{ fontSize: '13px' }}>126</div>
                         </div>
-                        <Avatar style={{ marginLeft: '10px' }} />
+                        <Avatar style={{ marginLeft: '10px' }} src='http://gretljestslaby.pythonanywhere.com/media/avatars/51156548187_ddf38186ae_b.jpg'/>
                         <div style={{ marginLeft: '10px' }}>
                             <div style={{ fontSize: '15px', fontWeight: 'bold' }}>{post.post.author.first_name} {post.post.author.last_name}</div>
                             <div style={{ color: 'gray' }}>{post.post.author.bio} | since 2021</div>

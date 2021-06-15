@@ -54,7 +54,7 @@ export const Topbar = ({ loginCallback, regCallback, logo, searchBar = false, ch
             {
                 isAuthenticated ?
                     <Grid direction="row" justify="flex-end" alignItems="center" className={clsx(classes.btns, classes.container)} container >
-                        <Avatar style={{ marginRight: '15px' }} />
+                        <Avatar style={{ marginRight: '15px' }} src='http://gretljestslaby.pythonanywhere.com/media/avatars/51156548187_ddf38186ae_b.jpg'/>
                         <p>{state.user.username}</p>
                         <div style={{
                             width: '1px',
