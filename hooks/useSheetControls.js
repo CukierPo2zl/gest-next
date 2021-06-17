@@ -39,7 +39,7 @@ export const useSheetControls = (onChange, data, tools, outputs, pk, supportedTo
                 payload = {
                     'brutto': parseFloat(grid[1][1].value),
                     'potracenia': parseFloat(grid[2][1].value),
-                    'dodatki': parseFloat(grid[2][1].value),
+                    'dodatki': parseFloat(grid[3][1].value),
                 }
             }
             requests.push(solve(tool, payload))
