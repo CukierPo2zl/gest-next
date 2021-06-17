@@ -87,12 +87,19 @@ export const WrappedSheet = ({ pk, data, tools, outputs, onDeleteSpreadsheet, su
 
     const handleSelectedToolChange = (selectedTools) => {
         let grid = [...data];
-        grid[0][1] = { value: 'y', readOnly: true }
-        grid[0][2] = { value: 'x', readOnly: true }
+
+        if (selectedTools.includes("AccountancySalaries")) {
+            grid[1][0] = { value: 'brutto', readOnly: true }
+            grid[2][0] = { value: 'potracenia', readOnly: true }
+            grid[3][0] = { value: 'dodatki', readOnly: true }
+        } else {
+            grid[1][0] = { value: 'y', readOnly: true }
+            grid[2][0] = { value: 'x', readOnly: true }
+        }
 
         onChange(grid, selectedTools, outputs, pk)
     }
-    
+
     const onContextMenu = (e, cell, i, j) =>
         cell.readOnly ? e.preventDefault() : null;
 

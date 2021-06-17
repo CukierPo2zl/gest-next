@@ -35,6 +35,13 @@ export const useSheetControls = (onChange, data, tools, outputs, pk, supportedTo
         })
 
         tools.forEach((tool) => {
+            if (tool === "AccountancySalaries") {
+                payload = {
+                    'brutto': parseFloat(grid[1][1].value),
+                    'potracenia': parseFloat(grid[2][1].value),
+                    'dodatki': parseFloat(grid[2][1].value),
+                }
+            }
             requests.push(solve(tool, payload))
             output.push({ tool_handle: tool })
         })

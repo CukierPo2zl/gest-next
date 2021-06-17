@@ -128,7 +128,6 @@ export default function Post(post) {
                             <div style={{ fontSize: '15px', fontWeight: 'bold' }}>{post.post.author.first_name} {post.post.author.last_name}</div>
                             <div style={{ color: 'gray' }}>{post.post.author.bio} | since 2021</div>
                         </div>
-
                     </div>
                     <hr></hr>
 
