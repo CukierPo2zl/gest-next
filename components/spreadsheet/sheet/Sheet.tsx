@@ -89,7 +89,7 @@ export const WrappedSheet = ({ pk, data, tools, outputs, onDeleteSpreadsheet, su
         let grid = [...data];
 
         if (selectedTools.includes("AccountancySalaries")) {
-            grid[1][0] = { value: 'brutto', readOnly: true }
+            grid[1][0] = { value: 'wyg. zasadnicze', readOnly: true }
             grid[2][0] = { value: 'potracenia', readOnly: true }
             grid[3][0] = { value: 'dodatki', readOnly: true }
         } else {
